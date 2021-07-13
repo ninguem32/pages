@@ -78,6 +78,5 @@ export default function home() {
         </Form>
       </Container>
       </>
-      
     )
 }

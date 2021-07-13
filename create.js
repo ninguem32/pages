@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
         GoogleMap,
         Marker
       } from "react-google-maps";
-      
+    
 
 export default function home() {
       const defaultCenter = { lat: 0, lng: 0 };
@@ -70,7 +70,7 @@ export default function home() {
                 containerElement={<div style={ containerElementStyle } />}
                 mapElement={<div style={ mapElementStyle } />}
                 onClick={(e)=>{coordinades={lng:e.latLng.lng(),lat:e.latLng.lat()}}}
-                defaultCenter={null}
+                defaultCenter={window.Geolocation}
                 />
             <Button variant="secondary" type="secondary">
             Submit
